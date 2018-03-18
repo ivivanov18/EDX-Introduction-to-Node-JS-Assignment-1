@@ -2,6 +2,10 @@ const csv=require('csvtojson');
 const path = require('path');
 const fs = require('fs');
 
+/**
+ * 
+ * @param {*} csvFilePath 
+ */
 const convertCSVToJSON = (csvFilePath = './customer-data.csv') => {
     let jsonArray = [];
 
@@ -17,5 +21,4 @@ const convertCSVToJSON = (csvFilePath = './customer-data.csv') => {
 }
 
 convertCSVToJSON(process.argv[2]);
-console.log(process.argv[2]);
 
