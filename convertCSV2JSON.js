@@ -11,7 +11,6 @@ const convertCSVToJSON = (csvFilePath = './customer-data.csv') => {
 
     csv().fromFile(csvFilePath)
      .on('json',(jsonObj) => {
-         counter ++;
         jsonArray.push(jsonObj);
      })
      .on('done',(error) => {
